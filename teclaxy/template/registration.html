@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block content %}
+{% if message %}
+<script>
+ alert('{{message}}');
+</script>
+{% endif %}
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Register here</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="">Home</a>
+                        <a href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+        
+        
+        <!-- Contact Start -->
+       
+<div class="form">
+    <div class="form-container">
+        <h2>Basic Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phno">Phone Number</label>
+                <input type="tel" id="phno" name="phno" required>
+            </div>
+            <div class="form-group">
+                <label for="emailid">Email ID</label>
+                <input type="email" id="emailid" name="emailid" required>
+            </div>
+            <div class="form-group">
+                <label for="college">College</label>
+                <input type="text" id="college" name="college" required>
+            </div>
+            <div class="form-group">
+                <label for="Branch">Branch</label>
+                <input type="text" id="Branch" name="Branch" required>
+            </div>
+            <div class="form-group">
+                <label for="yop">Year of Passing</label>
+                <input type="text" id="yop" name="yop" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="clgname">College Name</label>
+                <input type="text" id="clgname" name="clgname" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Choose Course You Are Interested In</label>
+                <select id="course" name="course" required>
+                    <option value="java_full_stack">Java Full Stack</option>
+                    <option value="python_full_stack">Python Full Stack</option>
+                    <option value="devops">DevOps</option>
+                    <option value="testing">Testing</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+       
+    </div>
+</div>
+
+{% endblock %}

@@ -217,7 +217,7 @@ def contact(request):
         frommail = request.POST['frommail']
         subject = request.POST['subject']
         message = request.POST['message']
-        send_mail(subject,message,frommail,['praveenreddiboina1614@gmail.com',frommail])
+        send_mail(subject,message,frommail,['tecalaxytraining@gmail.com',frommail])
 
     return render(request, 'contact.html')
 
